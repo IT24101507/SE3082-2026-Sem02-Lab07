@@ -1,8 +1,6 @@
-
 ![lab](/resources/pclogo-2-2.png)
 
 ## <div align="center">Lab 07</div>
-
 
 ## Objectives:
 
@@ -16,7 +14,8 @@ All exercises in this lab solve the **same problem**: sum an integer array of **
 
 You will start with a complete working program using `MPI_Bcast`, then progressively replace parts of it with more efficient collectives. Each exercise builds on the previous one.
 
-**Compile:** `mpicc -o program program.c`  
+**Compile:** `mpicc -o program program.c`
+
 **Run:** `mpirun -np 4 ./program`
 
 > **Note:** The number of processes must evenly divide 1,000,000. Use 4, 5, 8, 10, etc.
@@ -285,10 +284,3 @@ int MPI_Scan(void *sendbuf, void *recvbuf, int count,
 1. Create a `Makefile` that compiles all 6 programs and has a `run` target that executes them all with 4 processes.
 
 2. Push all your source files and the Makefile to your GitHub repository.
-
-
-
-
-
-#   S E 3 0 8 2 - 2 0 2 6 - S e m 0 2 - L a b 0 7  
- 
